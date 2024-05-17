@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi there! I'm <span>Ngoc</span> Pham</h1>
+        </div>
+    </div>
+</div>
+
+<!-- ---------about--------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/pfp.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                Undergraduate BS Student in Computer Science at California State University, Fullerton, 
+                with hands-on learning experiences with peers and faculty focusing on Computer and Data Science...
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <!-- skill list -->
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <!-- <li><span>UI/UX</span><br>Design Web/App Interfaces</li> -->
+                        <li><span>Web Development</span><br>Website Application Development</li>
+                        <li><span>Data Science</span><br>Analyze Dataset & Statistic</li>
+                    </ul>
+                </div>
+                <!-- experience list -->
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - 2024</span><br>Store Associate</li>
+                        <li><span>2023</span><br>Data Science Research Assistant</li>
+                        <li><span>2022</span><br>Pharmacy Technician</li>
+                    </ul>
+                </div>
+                <!-- education list -->
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020 - expected December 2025</span><br>California State University, Fullerton (CSUF)</li>
+                        <li><span></span><br></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------#experience--------- -->
+<div id="experiences">
+    <div class="container">
+        <h1 class="sub-title">My Experiences</h1>
+        <div class="box">
+            <ul id="first-list">
+                <li>
+                    <span></span>
+                    <div class="title">Store Associate</div>
+                    <div class="info">the best animation , the best toturials you would ever see . what about canvas ?? do you like it ..</div>
+                    <div class="time">
+                        <span>AUG 2023 - MAY 2024</span>
+                        <span></span>
+                    </div>
+                </li>
+                <li>
+                    <span></span>
+                    <div class="title">Pharmacy Technician</div>
+                    <div class="info">the best animation , the best toturials you would ever see . what about canvas ?? do you like it ..</div>
+                    <div class="time">
+                        <span>SEPT 2020 - SEPT 2021</span>
+                        <span></span>
+                    </div>
+                </li>
+                </div>
+            </div>
+    </div>
+</div>
+
+<!-- ---------#projects--------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.jpg">
+                <div class="layer">
+                    <a href="resources/ASSURE Presentation.pdf"><h3>Data Science Research</h3></a>
+                    <p>This data science research focuses on the influence content creators may have on 
+                        their viewer's decisions or choices using the current popular game, Valorant.
+                    </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpg">
+                <div class="layer">
+                    <a href="QuizWebsite-main/LoginnPage.html"><h3>Quiz Website</h3></a>
+                    <p>A quiz website that have a login feature </p>
+                </div>
+            </div>
+            <!-- <div class="work">
+                <img src="images/work-3.jpg">
+                <div class="layer">
+                    <h3>Compiler Project</h3>
+                    <p></p>
+                    <a href="QuizWebsite-main/LoginnPage.html"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>
+<!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <img src="images/contact_me.png" width="300">
+                <a href="resources/NP_Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>    
+    </div>
+    <div class="copyright">
+        <p>Copyright © Ngoc Pham</p>
+    </div>
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
