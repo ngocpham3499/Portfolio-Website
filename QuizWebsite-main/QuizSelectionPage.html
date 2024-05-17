@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Selection</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins, sans-serif";
+        }
+
+        body {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #FFD3D4;
+        }
+        .container {
+            width: 420 px;
+            background: #572649;
+            border: 2px solid rgba(255,255,255,.2);
+            color: white;
+            border-radius: 10px;
+            padding:30px 40px;
+        }
+        .container h2 {
+            font-size: 36px;
+            padding: 10px;
+            text-align: center;
+        }
+        .container .quiz-btn {
+            height: 45px;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #572649;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border: 1px solid white;
+            border-radius: 40px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .quiz-btn:hover {
+            background-color: #2d0c24;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Select a Quiz</h2>
+        <button class="quiz-btn" onclick="location.href='QuizPage1.html'">Quiz 1: Math</button>
+        <button class="quiz-btn" onclick="location.href='QuizPage2.html'">Quiz 2: Physics</button>
+        <button class="quiz-btn" onclick="location.href='QuizPage3.html'">Quiz 3: Chemistry</button>
+    </div>
+
+</body>
+</html>
